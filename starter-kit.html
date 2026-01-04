@@ -6,6 +6,18 @@
     <title>Free Starter Kit | Marta Wasko</title>
     <meta name="description" content="Get your free AI automation starter kit. Practical tools for knowledge workers.">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://martawasko.com/starter-kit.html">
+    <meta property="og:title" content="Free Starter Kit | Marta Wasko">
+    <meta property="og:description" content="Get your free AI automation starter kit. Practical tools for knowledge workers.">
+    <meta property="og:image" content="https://martawasko.com/images/IMG_2S.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@martawasko">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5DH4CXLCM7"></script>
     <script>
@@ -19,204 +31,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        :root {
-            --color-bg: #FAFAFA;
-            --color-surface: #FFFFFF;
-            --color-text: #18181B;
-            --color-text-muted: #71717A;
-            --color-text-light: #A1A1AA;
-            --color-button: #18181B;
-            --color-button-hover: #27272A;
-            --color-border: #E4E4E7;
-            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            --transition: 0.2s ease;
-        }
-
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        html {
-            font-size: 16px;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        body {
-            font-family: var(--font-family);
-            background-color: var(--color-bg);
-            color: var(--color-text);
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem 1rem;
-        }
-
-        .card {
-            background: var(--color-surface);
-            max-width: 480px;
-            width: 100%;
-            padding: 3rem;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-            text-align: center;
-        }
-
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.75rem;
-            color: var(--color-text-muted);
-            text-decoration: none;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            margin-bottom: 2rem;
-            transition: color var(--transition);
-        }
-
-        .back-link:hover {
-            color: var(--color-text);
-        }
-
-        .icon {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        h1 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 0.75rem;
-        }
-
-        .description {
-            font-size: 0.9375rem;
-            color: var(--color-text-muted);
-            margin-bottom: 2rem;
-            line-height: 1.7;
-        }
-
-        .form-group {
-            margin-bottom: 1rem;
-        }
-
-        input[type="email"] {
-            width: 100%;
-            padding: 0.875rem 1rem;
-            font-size: 0.9375rem;
-            font-family: var(--font-family);
-            border: 1px solid var(--color-border);
-            background: var(--color-bg);
-            color: var(--color-text);
-            outline: none;
-            transition: border-color var(--transition);
-        }
-
-        input[type="email"]:focus {
-            border-color: var(--color-text-muted);
-        }
-
-        input[type="email"]::placeholder {
-            color: var(--color-text-light);
-        }
-
-        .btn {
-            width: 100%;
-            padding: 0.875rem 1.5rem;
-            background-color: var(--color-button);
-            color: white;
-            font-size: 0.75rem;
-            font-weight: 500;
-            font-family: var(--font-family);
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-            border: 1px solid var(--color-button);
-            cursor: pointer;
-            transition: all var(--transition);
-        }
-
-        .btn:hover {
-            background-color: var(--color-button-hover);
-            border-color: var(--color-button-hover);
-        }
-
-        .privacy-note {
-            font-size: 0.6875rem;
-            color: var(--color-text-light);
-            margin-top: 1.5rem;
-        }
-
-        .features {
-            margin-top: 2rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--color-border);
-            text-align: left;
-        }
-
-        .features-title {
-            font-size: 0.6875rem;
-            font-weight: 600;
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: var(--color-text-muted);
-            margin-bottom: 1rem;
-            text-align: center;
-        }
-
-        .feature-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.75rem;
-            margin-bottom: 0.75rem;
-            font-size: 0.875rem;
-            color: var(--color-text-muted);
-        }
-
-        .feature-item span {
-            color: var(--color-text);
-        }
-
-        .announcement {
-            background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
-            border: 1px solid #F59E0B;
-            padding: 1.25rem;
-            margin-bottom: 2rem;
-            font-size: 0.875rem;
-            line-height: 1.6;
-            color: #92400E;
-        }
-
-        .announcement strong {
-            color: #78350F;
-        }
-
-        @media (max-width: 500px) {
-            .card {
-                padding: 2rem 1.5rem;
-            }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(8px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .card {
-            animation: fadeIn 0.4s ease;
-        }
-    </style>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="card">
+    <div class="card card--narrow">
         <a href="index.html" class="back-link">&larr; Back</a>
 
         <div class="icon">📦</div>
-        <h1>Free Starter Kit</h1>
-        <p class="description">
+        <h1 class="page-title">Free Starter Kit</h1>
+        <p class="page-description">
             Get practical AI automation templates and guides designed for knowledge workers. No fluff—just tools you can use today.
         </p>
 
