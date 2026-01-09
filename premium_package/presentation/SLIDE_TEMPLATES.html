@@ -1,0 +1,272 @@
+<!--
+================================================================================
+SLIDE TEMPLATES - Tokyo Night Theme
+================================================================================
+This file contains ready-to-use templates for creating presentation slides.
+Copy the relevant template and customize for your content.
+
+LAYOUTS AVAILABLE:
+1. Two-Container (Split-Screen) - Image left, text right
+2. One-Container (Centered) - Full-width centered content
+
+================================================================================
+-->
+
+<!-- ============================================================================
+     TEMPLATE 1: TWO-CONTAINER SPLIT-SCREEN LAYOUT
+     ============================================================================
+     Use for: Content slides with supporting visuals
+     Structure: 50% image (left) + 50% text (right)
+
+     Key classes:
+     - .split-screen     : Parent grid container
+     - .split-image      : Left image container (70% opacity)
+     - .split-image.hero : Left image container (100% opacity for title slides)
+     - .split-content    : Right text container (left-aligned)
+     - .split-content.centered : Right text container (centered, for title slides)
+
+     Image specifications:
+     - Recommended aspect ratio: 1:1 (square)
+     - Container size: 960px × 1080px
+     - Image display area: 840px × 840px (with 60px padding)
+     - Image center aligns at 540px from container top
+     ============================================================================
+-->
+
+<!-- EXAMPLE A: Title Slide (Hero) - Two Container -->
+<section>
+    <div class="split-screen">
+        <!-- LEFT: Image Container (100% opacity for hero) -->
+        <div class="split-image hero">
+            <img src="images/slide01_hero_title.png" alt="Hero Image Description">
+        </div>
+
+        <!-- RIGHT: Text Container (Centered for title slides) -->
+        <div class="split-content centered">
+            <!-- Brand Logo -->
+            <div class="logo-glow">
+                <span class="logo-text">brand<span class="accent-purple">.name</span></span>
+            </div>
+
+            <!-- Main Title -->
+            <h1 class="main-title">
+                Your Title Here<br>
+                <span class="gradient-text">Key Word</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="subtitle">Your subtitle or tagline goes here</p>
+
+            <!-- Badge -->
+            <div class="badge-container">
+                <span class="badge glow">Badge Text</span>
+            </div>
+
+            <!-- Navigation Hint -->
+            <div class="scroll-hint">
+                <i data-lucide="arrow-right" style="width: 16px; height: 16px; display: inline;"></i> Press → to continue
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- EXAMPLE B: Content Slide - Two Container -->
+<section>
+    <div class="split-screen">
+        <!-- LEFT: Image Container (70% opacity for content) -->
+        <div class="split-image">
+            <img src="images/your_slide_image.png" alt="Content Image Description">
+        </div>
+
+        <!-- RIGHT: Text Container (Left-aligned for content) -->
+        <div class="split-content">
+            <!-- Header (centered) -->
+            <div class="question-header" style="justify-content: center; width: 100%;">
+                <span class="q-badge">Q1</span>
+                <h2>Your Question or Title?</h2>
+            </div>
+
+            <!-- Tagline (centered) -->
+            <p class="slide-tagline" style="text-align: center; width: 100%;">
+                Supporting tagline with <span class="accent-cyan">highlighted text</span>
+            </p>
+
+            <!-- Content Grid/List -->
+            <div class="content-grid glass-card">
+                <div class="content-item">
+                    <span class="lucide-icon purple"><i data-lucide="icon-name"></i></span>
+                    <p>Item description here</p>
+                </div>
+                <div class="content-item">
+                    <span class="lucide-icon cyan"><i data-lucide="icon-name"></i></span>
+                    <p>Item description here</p>
+                </div>
+                <!-- Add more items as needed -->
+            </div>
+
+            <!-- Bottom Text (centered) -->
+            <p class="bottom-text" style="text-align: center; width: 100%;">
+                Concluding statement or <span class="accent-green">call to action</span>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ============================================================================
+     TEMPLATE 2: ONE-CONTAINER CENTERED LAYOUT
+     ============================================================================
+     Use for: CTA slides, toolkit pages, about/closing slides
+     Structure: Full-width centered content
+
+     Key classes:
+     - .cta-slide : Flexbox container, centers all content
+
+     Features:
+     - All content vertically and horizontally centered
+     - No image container
+     - Full-width layout
+     - Ideal for calls-to-action, summaries, and closing slides
+     ============================================================================
+-->
+
+<!-- EXAMPLE C: CTA/Toolkit Slide - One Container -->
+<section>
+    <div class="cta-slide">
+        <!-- Title -->
+        <h2>Get the <span class="accent-cyan">Full Toolkit</span></h2>
+
+        <!-- Card Grid -->
+        <div class="toolkit-grid">
+            <div class="toolkit-card glass-card">
+                <span class="lucide-icon purple lg"><i data-lucide="book-marked"></i></span>
+                <h4>Card Title 1</h4>
+                <p class="dim-text">Card description here</p>
+            </div>
+            <div class="toolkit-card glass-card">
+                <span class="lucide-icon cyan lg"><i data-lucide="layout-template"></i></span>
+                <h4>Card Title 2</h4>
+                <p class="dim-text">Card description here</p>
+            </div>
+            <div class="toolkit-card glass-card">
+                <span class="lucide-icon green lg"><i data-lucide="folder-archive"></i></span>
+                <h4>Card Title 3</h4>
+                <p class="dim-text">Card description here</p>
+            </div>
+            <div class="toolkit-card glass-card">
+                <span class="lucide-icon orange lg"><i data-lucide="credit-card"></i></span>
+                <h4>Card Title 4</h4>
+                <p class="dim-text">Card description here</p>
+            </div>
+        </div>
+
+        <!-- CTA Button -->
+        <a href="https://your-link.com" class="cta-button secondary" target="_blank">
+            <i data-lucide="download" style="width:20px;height:20px;"></i> Download Now
+        </a>
+    </div>
+</section>
+
+
+<!-- EXAMPLE D: About/Closing Slide - One Container -->
+<section>
+    <div class="cta-slide">
+        <!-- Brand Logo -->
+        <div class="brand-logo">
+            <span class="logo-large">brand<span class="accent-purple">.name</span></span>
+        </div>
+
+        <!-- Tagline -->
+        <p class="brand-tagline">"Your Tagline Here"</p>
+
+        <!-- Description -->
+        <p class="brand-description dim-text">
+            Brief description of your brand or offering.<br>
+            Can span multiple lines for clarity.
+        </p>
+
+        <!-- Social Links -->
+        <div class="social-row">
+            <a href="https://youtube.com/@channel" class="social-link" target="_blank">
+                <i data-lucide="youtube" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;"></i>YouTube
+            </a>
+            <a href="https://linkedin.com/in/profile" class="social-link" target="_blank">
+                <i data-lucide="linkedin" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;"></i>LinkedIn
+            </a>
+        </div>
+
+        <!-- Closing Quote -->
+        <p class="closing-quote">
+            <em><i data-lucide="sparkles" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;color:var(--accent-purple);"></i>"Your memorable closing quote."</em>
+        </p>
+    </div>
+</section>
+
+
+<!-- ============================================================================
+     PLACEHOLDER TEMPLATE
+     ============================================================================
+     Copy this minimal structure to start a new slide quickly.
+     ============================================================================
+-->
+
+<!-- PLACEHOLDER: Two-Container -->
+<section>
+    <div class="split-screen">
+        <div class="split-image">
+            <img src="images/placeholder.png" alt="Placeholder">
+        </div>
+        <div class="split-content">
+            <h2 style="text-align: center; width: 100%;">Slide Title</h2>
+            <!-- Your content here -->
+        </div>
+    </div>
+</section>
+
+<!-- PLACEHOLDER: One-Container -->
+<section>
+    <div class="cta-slide">
+        <h2>Slide Title</h2>
+        <!-- Your content here -->
+    </div>
+</section>
+
+
+<!-- ============================================================================
+     COMMON COMPONENTS REFERENCE
+     ============================================================================
+
+     ACCENT COLORS:
+     - .accent-purple  : #c49bff (Primary/Brand)
+     - .accent-cyan    : #89ddff (Information/Links)
+     - .accent-green   : #a6e3a1 (Success/Growth)
+     - .accent-red     : #ff7a93 (Warning/Constraints)
+     - .accent-orange  : #ffb86c (Action Items)
+
+     LUCIDE ICONS:
+     <i data-lucide="icon-name"></i>
+     Common icons: arrow-right, check, x, shield, file-text, calculator,
+                   clock, anchor, life-buoy, target, refresh-cw, play,
+                   download, youtube, linkedin, sparkles
+
+     GLASS CARD:
+     <div class="glass-card">Content</div>
+
+     GLOW BUTTON:
+     <a href="#" class="cta-button glow-button">Button Text</a>
+
+     GRADIENT TEXT:
+     <span class="gradient-text">Highlighted Text</span>
+
+     BADGE:
+     <span class="badge glow">Badge Text</span>
+     <span class="q-badge">Q1</span>
+     <span class="q-badge warning">Q2</span>
+
+     DIM TEXT:
+     <span class="dim-text">Secondary text</span>
+     <p class="dim-text">Muted paragraph</p>
+
+     ============================================================================
+-->

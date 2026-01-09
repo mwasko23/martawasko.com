@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 5-Question Automation Playbook | hitit.ai</title>
+
+    <!-- reveal.js CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tokyo Night Theme -->
+    <link rel="stylesheet" href="css/tokyo-night.css">
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- SLIDE 1: Title -->
+            <section>
+                <div class="split-screen">
+                    <div class="split-image hero">
+                        <img src="images/slide01_hero_title.png" alt="Automation Playbook">
+                    </div>
+                    <div class="split-content centered">
+                        <div class="logo-glow">
+                            <span class="logo-text">hitit<span class="accent-purple">.ai</span></span>
+                        </div>
+                        <h1 class="main-title">
+                            Your Automation<br>
+                            <span class="gradient-text">Playbook</span>
+                        </h1>
+                        <p class="subtitle">The 5 Questions That Unlock AI Automation</p>
+                        <div class="badge-container">
+                            <span class="badge glow">AI Education for the Thoughtful Mind</span>
+                        </div>
+                        <div class="scroll-hint">
+                            <i data-lucide="arrow-right" style="width: 16px; height: 16px; display: inline;"></i> Press → to continue
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 2: The Problem -->
+            <section>
+                <div class="split-screen">
+                    <div class="split-image">
+                        <img src="images/slide02_firewall_constraints.png" alt="Corporate Constraints">
+                    </div>
+                    <div class="split-content">
+                        <h2>You Work Behind a <span class="accent-cyan">Firewall</span></h2>
+                        <div class="constraints-list">
+                            <div class="constraint-item" data-popup="locked-laptop">
+                                <span class="lucide-icon red"><i data-lucide="laptop"></i></span>
+                                <span class="constraint-text">Locked-down laptop</span>
+                                <span class="click-hint">click for details</span>
+                            </div>
+                            <div class="constraint-item" data-popup="vpn-required">
+                                <span class="lucide-icon cyan"><i data-lucide="shield-check"></i></span>
+                                <span class="constraint-text">VPN required for everything</span>
+                                <span class="click-hint">click for details</span>
+                            </div>
+                            <div class="constraint-item" data-popup="compliance-watching">
+                                <span class="lucide-icon purple"><i data-lucide="eye"></i></span>
+                                <span class="constraint-text">Compliance watching</span>
+                                <span class="click-hint">click for details</span>
+                            </div>
+                            <div class="constraint-item" data-popup="no-install">
+                                <span class="lucide-icon orange"><i data-lucide="ban"></i></span>
+                                <span class="constraint-text">Can't install software freely</span>
+                                <span class="click-hint">click for details</span>
+                            </div>
+                        </div>
+                        <div class="callout-box">
+                            <p>Generic AI tutorials <span class="strikethrough">don't work for you</span></p>
+                            <p class="accent-green"><strong>This does.</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 3: The Promise -->
+            <section>
+                <div class="split-screen">
+                    <div class="split-image">
+                        <img src="images/slide03_transformation.png" alt="Before and After Transformation">
+                    </div>
+                    <div class="split-content">
+                        <h2 style="text-align: center; width: 100%;">The <span class="gradient-text">Transformation</span></h2>
+                        <div class="transformation">
+                            <div class="state before">
+                                <div class="state-label">BEFORE</div>
+                                <div class="state-content">
+                                    <span class="dim-text">"Just good at Excel"</span>
+                                </div>
+                            </div>
+                            <div class="transform-arrow">
+                                <span class="lucide-icon purple lg"><i data-lucide="arrow-right"></i></span>
+                            </div>
+                            <div class="state after">
+                                <div class="state-label accent-bg">AFTER</div>
+                                <div class="state-content">
+                                    <span class="accent-cyan">Workflow Automation</span><br>
+                                    <span class="accent-purple">Architect</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="promise" style="text-align: center; width: 100%;">
+                            By the end, you'll have a framework for <span class="accent-green">ANY</span> future automation.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 4: Question 1 - Is It Worth It? -->
+            <section>
+                <div class="split-screen">
+                    <div class="split-image">
+                        <img src="images/slide04_q1_worth_it.png" alt="ROI Value Calculation">
+                    </div>
+                    <div class="split-content">
+                        <div class="question-header" style="justify-content: center; width: 100%;">
+                            <span class="q-badge">Q1</span>
+                            <h2>Is It Worth Automating?</h2>
+                        </div>
+
+                        <div class="formula-display">
+                            <span class="formula-part"><i data-lucide="calendar" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;"></i>Frequency</span>
+                            <span class="formula-op">×</span>
+                            <span class="formula-part"><i data-lucide="clock" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;"></i>Time</span>
+                            <span class="formula-op">×</span>
+                            <span class="formula-part"><i data-lucide="flame" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;"></i>Pain</span>
+                            <span class="formula-op">=</span>
+                            <span class="formula-result"><i data-lucide="gem" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;"></i>Value</span>
+                        </div>
+
+                        <div class="calculator glass-card">
+                            <div class="calc-grid">
+                                <div class="calc-input">
+                                    <label>Frequency</label>
+                                    <select id="frequency" class="input-dark">
+                                        <option value="250">Daily (250/yr)</option>
+                                        <option value="52" selected>Weekly (52/yr)</option>
+                                        <option value="12">Monthly (12/yr)</option>
+                                    </select>
+                                </div>
+                                <div class="calc-input">
+                                    <label>Minutes per task</label>
+                                    <input type="number" id="minutes" value="30" min="1" max="480" class="input-dark">
+                                </div>
+                                <div class="calc-input">
+                                    <label>Pain factor</label>
+                                    <div class="pain-buttons">
+                                        <button class="pain-btn" data-value="1">Low</button>
+                                        <button class="pain-btn active" data-value="2">Med</button>
+                                        <button class="pain-btn" data-value="3">High</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc-output">
+                                <div class="output-number">
+                                    <span id="hours-saved">52</span>
+                                    <span class="output-unit">hours/year</span>
+                                </div>
+                                <div id="verdict" class="verdict positive">
+                                    <i data-lucide="check-circle" style="width:20px;height:20px;"></i>
+                                    <span>Worth automating</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 5: Question 2 - Is It Safe? -->
+            <section>
+                <div class="split-screen">
+                    <div class="split-image">
+                        <img src="images/slide05_q2_safety.png" alt="Safety Checklist Shield">
+                    </div>
+                    <div class="split-content">
+                        <div class="question-header" style="justify-content: center; width: 100%;">
+                            <span class="q-badge warning">Q2</span>
+                            <h2>Is It Safe to Automate?</h2>
+                        </div>
+                        <p class="slide-tagline" style="text-align: center; width: 100%;">This checklist might <span class="accent-red">save your job</span>.</p>
+
+                        <div class="safety-grid glass-card">
+                            <label class="safety-item">
+                                <input type="checkbox" id="safe1" class="safety-check">
+                                <span class="checkmark"></span>
+                                <span class="lucide-icon sm purple"><i data-lucide="file-lock"></i></span>
+                                <span class="safety-text">No PHI/PII involved <em class="dim-text">(or org-approved tools)</em></span>
+                                <span class="info-btn" data-popup="phi-pii"></span>
+                            </label>
+                            <label class="safety-item">
+                                <input type="checkbox" id="safe2" class="safety-check">
+                                <span class="checkmark"></span>
+                                <span class="lucide-icon sm cyan"><i data-lucide="send"></i></span>
+                                <span class="safety-text">No auto-send without human review</span>
+                                <span class="info-btn" data-popup="auto-send"></span>
+                            </label>
+                            <label class="safety-item">
+                                <input type="checkbox" id="safe3" class="safety-check">
+                                <span class="checkmark"></span>
+                                <span class="lucide-icon sm green"><i data-lucide="user-check"></i></span>
+                                <span class="safety-text">Human stays in the loop for decisions</span>
+                                <span class="info-btn" data-popup="human-loop"></span>
+                            </label>
+                            <label class="safety-item">
+                                <input type="checkbox" id="safe4" class="safety-check">
+                                <span class="checkmark"></span>
+                                <span class="lucide-icon sm orange"><i data-lucide="undo-2"></i></span>
+                                <span class="safety-text">Manual fallback exists if automation breaks</span>
+                                <span class="info-btn" data-popup="manual-fallback"></span>
+                            </label>
+                        </div>
+
+                        <div id="safety-verdict" class="safety-verdict">
+                            <span class="pending"><i data-lucide="circle-dashed" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;"></i> Complete the checklist</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 6: Question 3 - Do You Understand It? -->
+            <section>
+                <div class="split-screen">
+                    <div class="split-image">
+                        <img src="images/slide06_q3_understand.png" alt="8-Section Mini-Spec Blueprint">
+                    </div>
+                    <div class="split-content">
+                        <div class="question-header" style="justify-content: center; width: 100%;">
+                            <span class="q-badge">Q3</span>
+                            <h2>Do You Fully Understand It?</h2>
+                        </div>
+
+                        <p class="test-question" style="text-align: center; width: 100%;">Can you document <span class="accent-cyan">every single step</span> without guessing?</p>
+
+                        <div class="minispec-preview glass-card">
+                            <div class="minispec-header">
+                                <i data-lucide="file-text" style="width:20px;height:20px;vertical-align:middle;margin-right:8px;color:var(--accent-purple);"></i> The 8-Section Mini-Spec <span class="click-hint-inline">(click any section)</span>
+                            </div>
+                            <div class="minispec-grid">
+                                <div class="spec-item clickable" data-popup="spec-purpose"><span class="num">1</span> Purpose & Context</div>
+                                <div class="spec-item clickable" data-popup="spec-trigger"><span class="num">2</span> Trigger</div>
+                                <div class="spec-item clickable" data-popup="spec-inputs"><span class="num">3</span> Inputs</div>
+                                <div class="spec-item clickable" data-popup="spec-outputs"><span class="num">4</span> Outputs</div>
+                                <div class="spec-item clickable" data-popup="spec-process"><span class="num">5</span> Process Steps</div>
+                                <div class="spec-item clickable" data-popup="spec-assumptions"><span class="num">6</span> Assumptions</div>
+                                <div class="spec-item clickable" data-popup="spec-edge"><span class="num">7</span> Edge Cases</div>
+                                <div class="spec-item clickable" data-popup="spec-testing"><span class="num">8</span> Testing Checklist</div>
+                            </div>
+                        </div>
+
+                        <p class="minispec-verdict" style="text-align: center; width: 100%;">
+                            Can't fill this out? → <span class="accent-orange">Document first, automate later.</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 7: Question 4 - What's Your MVP? -->
+            <section>
+                <div class="split-screen">
+                    <div class="split-image">
+                        <img src="images/slide07_q4_mvp.png" alt="MVP Start Small Concept">
+                    </div>
+                    <div class="split-content">
+                        <div class="question-header" style="justify-content: center; width: 100%;">
+                            <span class="q-badge">Q4</span>
+                            <h2>What's Your MVP?</h2>
+                        </div>
+                        <p class="slide-tagline" style="text-align: center; width: 100%;">MVP = Minimum Viable Product</p>
+
+                        <div class="mvp-comparison" style="width: 100%; align-items: center;">
+                            <div class="scope-card full glass-card">
+                                <div class="scope-label dim-text">Full Vision</div>
+                                <p>"Automate the entire monthly reporting process"</p>
+                                <div class="scope-warning"><i data-lucide="x-circle" style="width:18px;height:18px;vertical-align:middle;margin-right:4px;"></i> Too big to start</div>
+                            </div>
+
+                            <div class="scope-arrow">
+                                <span class="lucide-icon purple"><i data-lucide="arrow-down"></i></span>
+                            </div>
+
+                            <div class="scope-card mvp glass-card glow-border clickable" data-popup="mvp-concept">
+                                <div class="scope-label accent-green">Your MVP <span class="click-hint-inline">(click to learn more)</span></div>
+                                <p>"Automate <span class="accent-cyan">just</span> the data consolidation step"</p>
+                                <div class="scope-success"><i data-lucide="check-circle" style="width:18px;height:18px;vertical-align:middle;margin-right:4px;color:var(--accent-green);"></i> Achievable & valuable</div>
+                            </div>
+                        </div>
+
+                        <p class="mvp-mantra" style="text-align: center; width: 100%;">
+                            <span class="accent-purple">Start small.</span>
+                            <span class="accent-cyan">Prove value.</span>
+                            <span class="accent-green">Then grow.</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 8: Question 5 - Can You Maintain It? -->
+            <section>
+                <div class="split-screen">
+                    <div class="split-image">
+                        <img src="images/slide08_q5_maintenance.png" alt="Maintenance Sustainability Cycle">
+                    </div>
+                    <div class="split-content">
+                        <div class="question-header" style="justify-content: center; width: 100%;">
+                            <span class="q-badge">Q5</span>
+                            <h2>Can You Maintain It?</h2>
+                        </div>
+
+                        <div class="maintenance-grid">
+                            <div class="maint-card glass-card clickable" data-popup="maint-time">
+                                <span class="lucide-icon cyan lg"><i data-lucide="clock"></i></span>
+                                <p>30 min/month for upkeep?</p>
+                            </div>
+                            <div class="maint-card glass-card clickable" data-popup="maint-stable">
+                                <span class="lucide-icon green lg"><i data-lucide="anchor"></i></span>
+                                <p>Process is stable?</p>
+                            </div>
+                            <div class="maint-card glass-card clickable" data-popup="maint-docs">
+                                <span class="lucide-icon purple lg"><i data-lucide="file-check"></i></span>
+                                <p>Mini-Spec documented?</p>
+                            </div>
+                            <div class="maint-card glass-card clickable" data-popup="maint-fallback">
+                                <span class="lucide-icon orange lg"><i data-lucide="life-buoy"></i></span>
+                                <p>Manual fallback ready?</p>
+                            </div>
+                        </div>
+
+                        <p class="maintenance-warning" style="text-align: center; width: 100%;">
+                            <i data-lucide="alert-triangle" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;color:var(--accent-orange);"></i> If "no" to any → Plan for it before building.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 9: The Playbook Summary -->
+            <section>
+                <div class="split-screen">
+                    <div class="split-image">
+                        <img src="images/slide09_summary_playbook.png" alt="5-Question Playbook Summary">
+                    </div>
+                    <div class="split-content">
+                        <h2 class="summary-title" style="text-align: center; width: 100%;">The <span class="gradient-text">5-Question</span> Playbook</h2>
+
+                        <div class="playbook-summary">
+                            <div class="playbook-row">
+                                <span class="row-q accent-purple">Q1</span>
+                                <span class="row-text">Is it worth automating?</span>
+                                <span class="row-hint"><i data-lucide="calculator" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;"></i>Freq × Time × Pain</span>
+                            </div>
+                            <div class="playbook-row">
+                                <span class="row-q accent-red">Q2</span>
+                                <span class="row-text">Is it safe?</span>
+                                <span class="row-hint"><i data-lucide="shield" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;"></i>4-point safety check</span>
+                            </div>
+                            <div class="playbook-row">
+                                <span class="row-q accent-cyan">Q3</span>
+                                <span class="row-text">Do you understand it?</span>
+                                <span class="row-hint"><i data-lucide="file-text" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;"></i>Mini-Spec test</span>
+                            </div>
+                            <div class="playbook-row">
+                                <span class="row-q accent-green">Q4</span>
+                                <span class="row-text">What's your MVP?</span>
+                                <span class="row-hint"><i data-lucide="target" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;"></i>Smallest value</span>
+                            </div>
+                            <div class="playbook-row">
+                                <span class="row-q accent-orange">Q5</span>
+                                <span class="row-text">Can you maintain it?</span>
+                                <span class="row-hint"><i data-lucide="refresh-cw" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;"></i>Sustainability</span>
+                            </div>
+                        </div>
+
+                        <div class="decision-row" style="justify-content: center; width: 100%;">
+                            <span class="decision-badge proceed"><i data-lucide="check" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;"></i> PROCEED</span>
+                            <span class="decision-badge defer"><i data-lucide="pause" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;"></i> DEFER</span>
+                            <span class="decision-badge skip"><i data-lucide="x" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;"></i> SKIP</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 10: Your Next Step - CTA -->
+            <section>
+                <div class="split-screen">
+                    <div class="split-image">
+                        <img src="images/slide10_cta_journey.png" alt="Learning Journey Path">
+                    </div>
+                    <div class="split-content">
+                        <h2 style="text-align: center; width: 100%;">Your Next Step</h2>
+
+                        <div class="cta-content" style="text-align: center; width: 100%;">
+                            <p class="cta-intro">Learn the complete system in</p>
+                            <h3 class="series-name gradient-text">AI for Knowledge Workers</h3>
+                            <p class="series-episodes">12-Episode Video Series</p>
+
+                            <div class="episode-preview">
+                                <div class="ep-group">
+                                    <span class="lucide-icon sm purple"><i data-lucide="blocks"></i></span>
+                                    <span class="ep-label">Ep 1-2</span>
+                                    <span class="ep-name">Foundation</span>
+                                </div>
+                                <div class="ep-group">
+                                    <span class="lucide-icon sm red"><i data-lucide="shield-check"></i></span>
+                                    <span class="ep-label">Ep 3-6</span>
+                                    <span class="ep-name">Safety & Setup</span>
+                                </div>
+                                <div class="ep-group">
+                                    <span class="lucide-icon sm cyan"><i data-lucide="hammer"></i></span>
+                                    <span class="ep-label">Ep 7-10</span>
+                                    <span class="ep-name">Build</span>
+                                </div>
+                                <div class="ep-group">
+                                    <span class="lucide-icon sm green"><i data-lucide="book-open"></i></span>
+                                    <span class="ep-label">Ep 11-12</span>
+                                    <span class="ep-name">Playbook</span>
+                                </div>
+                            </div>
+
+                            <a href="https://hitit.ai" class="cta-button glow-button" target="_blank">
+                                <i data-lucide="play" style="width:20px;height:20px;"></i> Watch the Series
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SLIDE 11: Get the Full Toolkit -->
+            <section>
+                <div class="cta-slide">
+                    <h2>Get the <span class="accent-cyan">Full Toolkit</span></h2>
+
+                    <div class="toolkit-grid">
+                        <div class="toolkit-card glass-card">
+                            <span class="lucide-icon purple lg"><i data-lucide="book-marked"></i></span>
+                            <h4>PDF Workbook</h4>
+                            <p class="dim-text">50-page guide with all worksheets</p>
+                        </div>
+                        <div class="toolkit-card glass-card">
+                            <span class="lucide-icon cyan lg"><i data-lucide="layout-template"></i></span>
+                            <h4>Notion Template</h4>
+                            <p class="dim-text">Interactive workspace</p>
+                        </div>
+                        <div class="toolkit-card glass-card">
+                            <span class="lucide-icon green lg"><i data-lucide="folder-archive"></i></span>
+                            <h4>File Pack</h4>
+                            <p class="dim-text">Templates, scripts, data</p>
+                        </div>
+                        <div class="toolkit-card glass-card">
+                            <span class="lucide-icon orange lg"><i data-lucide="credit-card"></i></span>
+                            <h4>Reference Cards</h4>
+                            <p class="dim-text">Printable desk references</p>
+                        </div>
+                    </div>
+
+                    <a href="https://hitit.ai" class="cta-button secondary" target="_blank">
+                        <i data-lucide="download" style="width:20px;height:20px;"></i> Download Starter Kit
+                    </a>
+                </div>
+            </section>
+
+            <!-- SLIDE 12: About -->
+            <section>
+                <div class="cta-slide">
+                    <div class="brand-logo">
+                        <span class="logo-large">hitit<span class="accent-purple">.ai</span></span>
+                    </div>
+
+                    <p class="brand-tagline">"AI Education for the Thoughtful Mind"</p>
+
+                    <p class="brand-description dim-text">
+                        Systems thinking, AI philosophy, and practical wisdom<br>
+                        for navigating our rapidly changing landscape.
+                    </p>
+
+                    <div class="social-row">
+                        <a href="https://www.youtube.com/@Marta_Wasko" class="social-link" target="_blank">
+                            <i data-lucide="youtube" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;"></i>YouTube
+                        </a>
+                        <a href="https://www.linkedin.com/in/martawasko" class="social-link" target="_blank">
+                            <i data-lucide="linkedin" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;"></i>LinkedIn
+                        </a>
+                    </div>
+
+                    <p class="closing-quote">
+                        <em><i data-lucide="sparkles" style="width:18px;height:18px;vertical-align:middle;margin-right:6px;color:var(--accent-purple);"></i>"Small tools, big freedom."</em>
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- reveal.js -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.6.1/dist/reveal.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="js/interactions.js"></script>
+
+    <script>
+        // Initialize Reveal.js
+        Reveal.initialize({
+            hash: true,
+            slideNumber: 'c/t',
+            progress: true,
+            controls: true,
+            controlsTutorial: true,
+            transition: 'slide',
+            backgroundTransition: 'fade',
+            width: 1920,
+            height: 1080,
+            margin: 0.04,
+            center: true,
+            touch: true
+        });
+
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Re-initialize icons when slides change (for dynamically rendered content)
+        Reveal.on('slidechanged', () => {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
