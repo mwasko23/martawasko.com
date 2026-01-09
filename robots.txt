@@ -3,5 +3,6 @@ Allow: /
 Disallow: /starter-kit-access.html
 Disallow: /premium_package/*.pdf
 Disallow: /AI_Starter_Kit*.pdf
+Disallow: /AI_Starter_Kit_Final.pdf
 
 Sitemap: https://martawasko.com/sitemap.xml
