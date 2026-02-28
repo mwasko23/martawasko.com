@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses Coming Soon | Marta Wasko</title>
-    <meta name="description" content="AI automation courses for knowledge workers. Coming soon.">
+    <title>AI Operator — From AI Tourist to AI Operator | Marta Wasko</title>
+    <meta name="description" content="Learn the core techniques to use AI with surgical precision. Stop chasing tools. Start building exactly what you need.">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -12,8 +12,8 @@
     <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://martawasko.com/courses.html">
-    <meta property="og:title" content="Courses Coming Soon | Marta Wasko">
-    <meta property="og:description" content="AI automation courses for knowledge workers. Coming soon.">
+    <meta property="og:title" content="AI Operator — From AI Tourist to AI Operator">
+    <meta property="og:description" content="Learn the core techniques to use AI with surgical precision. Stop chasing tools. Start building exactly what you need.">
     <meta property="og:image" content="https://martawasko.com/images/IMG_2S.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@martawasko">
@@ -27,43 +27,664 @@
       gtag('config', 'G-5DH4CXLCM7');
     </script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f0f4ff',
+                            100: '#e0e9ff',
+                            200: '#c7d6fe',
+                            300: '#a4b8fc',
+                            400: '#8091f8',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                            900: '#312e81',
+                        },
+                        accent: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #3730a3 100%);
+        }
+        .card-gradient {
+            background: linear-gradient(180deg, rgba(99, 102, 241, 0.1) 0%, rgba(99, 102, 241, 0.02) 100%);
+        }
+    </style>
 </head>
-<body>
-    <div class="card card--narrow">
-        <a href="index.html" class="back-link">&larr; Back</a>
+<body class="bg-slate-950 text-slate-100">
+    <!-- Sticky Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800/50">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition">
+                <div class="w-8 h-8 rounded-lg bg-primary-600 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                    </svg>
+                </div>
+                <span class="font-bold text-lg">AI Operator</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm text-slate-400">
+                <a href="#problem" class="hover:text-white transition">The Problem</a>
+                <a href="#skills" class="hover:text-white transition">What You'll Learn</a>
+                <a href="#offer" class="hover:text-white transition">Pricing</a>
+                <a href="#faq" class="hover:text-white transition">FAQ</a>
+            </div>
+            <a href="#offer" class="bg-accent-500 hover:bg-accent-600 text-slate-900 font-semibold px-4 py-2 rounded-lg text-sm transition">
+                Join Waitlist
+            </a>
+        </nav>
+    </header>
 
-        <div class="icon">🎓</div>
-        <span class="badge">Coming Soon</span>
-        <h1 class="page-title">Courses</h1>
-        <p class="page-description">
-            Learn AI automation by building real workplace tools. Practical, hands-on courses designed for knowledge workers who want results—not theory.
-        </p>
+    <!-- Hero Section -->
+    <section class="gradient-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-32">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 bg-primary-600/20 border border-primary-500/30 rounded-full px-4 py-1.5 text-sm text-primary-300 mb-6">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-accent-500"></span>
+                    </span>
+                    Only 30 Founding Member spots available
+                </div>
 
-        <div class="notify-section">
-            <p class="notify-title">Get notified when we launch</p>
-            <script async data-uid="93b5a594e0" src="https://hitit-ai.kit.com/93b5a594e0/index.js"></script>
-            <p class="privacy-note">No spam. Unsubscribe anytime.</p>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                    From <span class="text-slate-400">AI Tourist</span><br>
+                    to <span class="gradient-text">AI Operator</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl text-slate-300 mb-4 leading-relaxed">
+                    Learn the core techniques to use AI with surgical precision.
+                </p>
+                <p class="text-lg text-slate-400 mb-8">
+                    Stop chasing tools. Start building exactly what you need.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                    <a href="#offer" class="bg-accent-500 hover:bg-accent-600 text-slate-900 font-bold px-8 py-4 rounded-xl text-lg transition transform hover:scale-105 text-center">
+                        Join Waitlist — Lock in $247
+                    </a>
+                    <a href="#skills" class="border border-slate-600 hover:border-slate-500 text-slate-300 font-medium px-8 py-4 rounded-xl text-lg transition text-center">
+                        See What You'll Learn
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-6 text-sm text-slate-400">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        Immediate results
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        No coding required
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                        Lifetime access
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="social-links social-links--border">
-            <a href="https://x.com/martawasko" class="social-link" aria-label="X (Twitter)" target="_blank">
-                <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-                </svg>
-            </a>
-            <a href="https://www.youtube.com/@Marta_Wasko" class="social-link" aria-label="YouTube" target="_blank">
-                <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
-                    <path d="m10 15 5-3-5-3z"/>
-                </svg>
-            </a>
+        <!-- Abstract shapes -->
+        <div class="absolute top-1/4 right-10 w-72 h-72 bg-primary-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-500/5 rounded-full blur-3xl"></div>
+    </section>
+
+    <!-- Problem Section -->
+    <section id="problem" class="py-20 md:py-32 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    You've tried AI. It's not <span class="text-slate-500">clicking</span>.
+                </h2>
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+                    Sound familiar?
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6">
+                    <div class="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Information Overwhelm</h3>
+                    <p class="text-slate-400">New AI tools every week. Endless tutorials. Conflicting advice. You've spent more time researching than actually doing.</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6">
+                    <div class="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Tool Fatigue</h3>
+                    <p class="text-slate-400">ChatGPT, Claude, Gemini, Copilot, Jasper, Notion AI... You're paying for five subscriptions and using none of them well.</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6">
+                    <div class="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">The "Technical" Barrier</h3>
+                    <p class="text-slate-400">You think you need to code, understand APIs, or be "tech-savvy" to really leverage AI. You've convinced yourself the ceiling is low for you.</p>
+                </div>
+
+                <div class="bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6">
+                    <div class="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Generic Outputs</h3>
+                    <p class="text-slate-400">Everything AI produces feels... bland. Cookie-cutter. It doesn't understand YOUR business, YOUR problems, YOUR way of working.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-xl text-slate-300 font-medium">
+                    The problem isn't you. The problem is everyone's teaching you <em>tools</em>, not <em>techniques</em>.
+                </p>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Transformation Section -->
+    <section class="py-20 md:py-32 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="max-w-3xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                    What if AI actually worked <span class="gradient-text">for you</span>?
+                </h2>
+                <p class="text-lg text-slate-400">
+                    Imagine opening your laptop and knowing exactly which AI to use, how to ask, and walking away with exactly what you need—every time.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-600/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Organize Chaos in Minutes</h3>
+                    <p class="text-slate-400 text-sm">Turn a messy folder nightmare into organized structure in 5 minutes using ChatGPT + PowerShell</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-600/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">Research at Lightning Speed</h3>
+                    <p class="text-slate-400 text-sm">Research and compare two companies, save everything to GitHub, in 5 minutes using Claude Code</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary-600/20 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-2">3x Your Output Speed</h3>
+                    <p class="text-slate-400 text-sm">Stop typing — dictate emails, documents, brainstorms at 3x speed with voice-to-text workflows</p>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-primary-900/50 to-primary-800/30 border border-primary-700/50 rounded-2xl p-8 md:p-12 text-center max-w-3xl mx-auto">
+                <p class="text-xl md:text-2xl font-medium text-slate-200 leading-relaxed">
+                    "By the end of Lesson 1, you'll see what's actually possible. By the end of the course, <span class="text-accent-400">you'll be the person others ask for help.</span>"
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5 Skills Section -->
+    <section id="skills" class="py-20 md:py-32 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16">
+                <p class="text-primary-400 font-semibold mb-2">THE CURRICULUM</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    The 5 Operator Skills
+                </h2>
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+                    Master these techniques once. Apply them to any AI tool, forever.
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <div class="card-gradient border border-slate-700/50 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start">
+                    <div class="flex-shrink-0 w-14 h-14 bg-primary-600 rounded-xl flex items-center justify-center text-2xl font-bold">
+                        1
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Prompt Architecture</h3>
+                        <p class="text-slate-400 mb-4">Structure AI interactions for reliable, repeatable outputs. No more "that's not what I meant" moments. Learn the frameworks that work every time.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">Context setting</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">Output formatting</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">Chain-of-thought</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-gradient border border-slate-700/50 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start">
+                    <div class="flex-shrink-0 w-14 h-14 bg-primary-600 rounded-xl flex items-center justify-center text-2xl font-bold">
+                        2
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Tool Selection</h3>
+                        <p class="text-slate-400 mb-4">Know which AI to reach for and when. ChatGPT vs Claude vs specialized tools—make the right choice instantly instead of guessing.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">Strength mapping</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">Cost optimization</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">Use case matching</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-gradient border border-slate-700/50 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start">
+                    <div class="flex-shrink-0 w-14 h-14 bg-primary-600 rounded-xl flex items-center justify-center text-2xl font-bold">
+                        3
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Workflow Integration</h3>
+                        <p class="text-slate-400 mb-4">Embed AI into how you already work. No workflow overhauls. No new systems to learn. Just seamless enhancement of your existing processes.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">Process automation</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">Tool chaining</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">Trigger systems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-gradient border border-slate-700/50 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start">
+                    <div class="flex-shrink-0 w-14 h-14 bg-primary-600 rounded-xl flex items-center justify-center text-2xl font-bold">
+                        4
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Rapid Prototyping</h3>
+                        <p class="text-slate-400 mb-4">Vibe-code small tools that solve YOUR specific problems. No programming experience needed. Build custom solutions in hours, not weeks.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">No-code building</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">AI-assisted coding</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">Custom automations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-gradient border border-slate-700/50 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 items-start">
+                    <div class="flex-shrink-0 w-14 h-14 bg-primary-600 rounded-xl flex items-center justify-center text-2xl font-bold">
+                        5
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="text-xl font-bold mb-2">Learning Acceleration</h3>
+                        <p class="text-slate-400 mb-4">Use AI to master new domains faster than ever. Turn weeks of research into hours. Become the fast learner you always wanted to be.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">Knowledge synthesis</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">Skill acquisition</span>
+                            <span class="bg-slate-800 text-slate-300 text-xs px-3 py-1 rounded-full">Research methods</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Makes This Different -->
+    <section class="py-20 md:py-32 bg-slate-950">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    This isn't another AI course
+                </h2>
+                <p class="text-lg text-slate-400">
+                    Here's what makes AI Operator different.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1">Practical from Day 1</h3>
+                        <p class="text-slate-400">No theory dumps. Every lesson ends with you doing something real. Immediate improvement, not "someday."</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1">Transferable Techniques</h3>
+                        <p class="text-slate-400">Tools change. Techniques don't. Learn skills that work across any AI, any update, any new release.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1">Holistic Approach</h3>
+                        <p class="text-slate-400">Not "learn ChatGPT." It's "become an operator." A complete mindset shift in how you approach AI.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-4">
+                    <div class="flex-shrink-0 w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center">
+                        <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-1">Your Problems, Solved</h3>
+                        <p class="text-slate-400">You'll build custom solutions for YOUR specific challenges. Not generic templates—actual tools you'll use every day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section id="offer" class="py-20 md:py-32 bg-slate-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-12">
+                    <div class="inline-flex items-center gap-2 bg-accent-500/20 border border-accent-500/30 rounded-full px-4 py-1.5 text-sm text-accent-300 mb-6">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                        </svg>
+                        Limited to 30 Founding Members
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        Join the Waitlist
+                    </h2>
+                    <p class="text-lg text-slate-400">
+                        Be first to access when we launch. Lock in founding member pricing.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-b from-slate-800/80 to-slate-800/40 border border-slate-700/50 rounded-3xl p-8 md:p-10">
+                    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-8 pb-8 border-b border-slate-700/50">
+                        <div>
+                            <p class="text-slate-400 mb-1">Founding Member Price</p>
+                            <div class="flex items-baseline gap-3">
+                                <span class="text-5xl font-bold">$247</span>
+                                <span class="text-xl text-slate-500 line-through">$497</span>
+                                <span class="bg-green-500/20 text-green-400 text-sm font-medium px-2 py-0.5 rounded">50% OFF</span>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-slate-400 text-sm">One-time payment</p>
+                            <p class="text-slate-400 text-sm">Lifetime access included</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 mb-8">
+                        <h3 class="font-semibold text-lg">What's Included:</h3>
+                        <div class="grid md:grid-cols-2 gap-3">
+                            <div class="flex items-center gap-3">
+                                <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span class="text-slate-300">Full course (5 modules)</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span class="text-slate-300">Lifetime access</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span class="text-slate-300">All future updates free</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span class="text-slate-300">Direct instructor access</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span class="text-slate-300">Shape the course content</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span class="text-slate-300">Private community access</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kit.com Email Capture Form -->
+                    <div class="space-y-4">
+                        <script async data-uid="93b5a594e0" src="https://hitit-ai.kit.com/93b5a594e0/index.js"></script>
+                        <p class="text-center text-slate-500 text-sm">
+                            Join the waitlist to lock in founding member pricing when we launch.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <p class="text-slate-400">
+                        <span class="font-semibold text-slate-300">Risk-free:</span> 30-day money-back guarantee when the course launches. No questions asked.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 md:py-32 bg-slate-950">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                    Frequently Asked Questions
+                </h2>
+            </div>
+
+            <div class="space-y-4">
+                <details class="group bg-slate-800/50 border border-slate-700/50 rounded-xl">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-lg font-medium">
+                        Do I need to be technical or know how to code?
+                        <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400">
+                        No. The course is designed for non-technical people. You'll learn "vibe coding"—building simple tools by describing what you want, not by writing code. If you can write an email, you can do this.
+                    </div>
+                </details>
+
+                <details class="group bg-slate-800/50 border border-slate-700/50 rounded-xl">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-lg font-medium">
+                        What if AI tools change? Won't this become outdated?
+                        <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400">
+                        That's exactly why we teach techniques, not tools. The 5 Operator Skills work regardless of which AI you use or how it updates. Plus, founding members get all future updates free—forever.
+                    </div>
+                </details>
+
+                <details class="group bg-slate-800/50 border border-slate-700/50 rounded-xl">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-lg font-medium">
+                        How much time do I need to invest?
+                        <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400">
+                        Each module is designed to be completed in a single sitting. You'll see results after Lesson 1. The full course can be completed at your own pace—most finish within a few weeks while working full-time.
+                    </div>
+                </details>
+
+                <details class="group bg-slate-800/50 border border-slate-700/50 rounded-xl">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-lg font-medium">
+                        I've tried other AI courses. Why is this different?
+                        <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400">
+                        Most courses teach you one tool or give you generic prompts to copy. AI Operator teaches you a complete operating system for AI—how to think about problems, which tool to choose, and how to build your own solutions. It's the difference between being given a fish and learning to fish.
+                    </div>
+                </details>
+
+                <details class="group bg-slate-800/50 border border-slate-700/50 rounded-xl">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-lg font-medium">
+                        What if it doesn't work for me?
+                        <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400">
+                        30-day money-back guarantee, no questions asked. If you don't see real improvement in how you use AI, email us and get a full refund. We're confident because we've seen this work.
+                    </div>
+                </details>
+
+                <details class="group bg-slate-800/50 border border-slate-700/50 rounded-xl">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-lg font-medium">
+                        Why only 30 founding member spots?
+                        <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400">
+                        Founding members get direct access to the instructor and help shape the course content. To deliver that level of personal attention, we're capping the initial group. Once the 30 spots fill, the price goes to $497 and direct access ends.
+                    </div>
+                </details>
+
+                <details class="group bg-slate-800/50 border border-slate-700/50 rounded-xl">
+                    <summary class="flex items-center justify-between cursor-pointer p-6 text-lg font-medium">
+                        When does the course launch?
+                        <svg class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </summary>
+                    <div class="px-6 pb-6 text-slate-400">
+                        Join the waitlist to be notified when we launch. Founding members will get early access and the opportunity to preview and provide feedback on modules before they go live.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 md:py-32 gradient-bg">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">
+                Ready to become an AI Operator?
+            </h2>
+            <p class="text-xl text-slate-300 mb-8">
+                Stop being an AI tourist. Start building exactly what you need.
+            </p>
+            <a href="#offer" class="inline-block bg-accent-500 hover:bg-accent-600 text-slate-900 font-bold px-10 py-4 rounded-xl text-lg transition transform hover:scale-105">
+                Join the Waitlist
+            </a>
+            <p class="mt-6 text-slate-400">
+                Only 30 spots at founding member pricing. Be the first to know when we launch.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <a href="index.html" class="flex items-center gap-2 hover:opacity-80 transition">
+                    <div class="w-8 h-8 rounded-lg bg-primary-600 flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <span class="font-bold">AI Operator</span>
+                </a>
+                <div class="text-slate-500 text-sm">
+                    &copy; 2025 Marta Wasko. All rights reserved.
+                </div>
+                <div class="flex items-center gap-6 text-sm text-slate-400">
+                    <a href="index.html" class="hover:text-white transition">Back to Home</a>
+                    <a href="https://x.com/martawasko" class="hover:text-white transition" target="_blank">Twitter</a>
+                    <a href="https://www.youtube.com/@Marta_Wasko" class="hover:text-white transition" target="_blank">YouTube</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background on scroll
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('bg-slate-950/95');
+            } else {
+                header.classList.remove('bg-slate-950/95');
+            }
+        });
+    </script>
 </body>
 </html>
