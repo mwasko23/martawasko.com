@@ -193,6 +193,18 @@
             color: var(--color-teal);
         }
 
+        .btn--map {
+            margin-top: 1.5rem;
+            color: var(--color-teal);
+            border-color: var(--color-teal);
+        }
+
+        .btn--map:hover {
+            background-color: transparent;
+            color: var(--color-navy);
+            border-color: var(--color-navy);
+        }
+
         .village-closing {
             font-size: 0.875rem;
             font-style: italic;
@@ -275,6 +287,20 @@
                     Knowledge workers who have decided to move rather than wait. Non-engineers welcome — <strong>especially non-engineers</strong>.
                 </p>
             </div>
+        </div>
+
+        <!-- Operator Map -->
+        <div class="village-block">
+            <p class="village-label">Before you join</p>
+            <div class="village-prose">
+                <p>
+                    If you would rather start on your own, there is a private version of this. The Operator Map asks about the work you actually do — the spreadsheet, the report, the thing you rebuild every month — and gives you one recipe for the piece worth automating first. No account, no signup, nothing to install. About ten minutes.
+                </p>
+            </div>
+            <a href="https://operator.martawasko.com/?utm_source=village&amp;utm_medium=site&amp;utm_campaign=book" class="btn btn--outline btn--full btn--village btn--map" target="_blank" rel="noopener" onclick="gtag('event', 'operator_map_click', { 'link_location': 'village_page' });">
+                <i data-lucide="map" class="btn-icon"></i>
+                Open the Operator Map
+            </a>
         </div>
 
         <!-- Primary CTA -->
