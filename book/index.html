@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Meantime — martawasko.com</title>
+    <meta name="description" content="The Meantime is a non-technical compass for working with the AI we actually have. A book for knowledge workers thinking clearly about tools that are powerful, uneven, and often misunderstood. Out now on Amazon.">
+    <meta name="author" content="Marta Wasko">
+    <link rel="canonical" href="https://martawasko.com/book">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="book">
+    <meta property="og:url" content="https://martawasko.com/book">
+    <meta property="og:title" content="The Meantime — a non-technical compass for working with the AI we actually have">
+    <meta property="og:description" content="Most of us are not working in the polished future promised by AI marketing. We are working in the meantime. A book for people trying to think clearly about that reality.">
+    <meta property="og:image" content="https://martawasko.com/images/the-meantime-cover.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@martawasko">
+    <meta name="twitter:title" content="The Meantime — a non-technical compass for working with the AI we actually have">
+    <meta name="twitter:description" content="A book for knowledge workers trying to think clearly about the AI we actually have. Out now on Amazon.">
+    <meta name="twitter:image" content="https://martawasko.com/images/the-meantime-cover.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Book",
+          "@id": "https://martawasko.com/book#book",
+          "name": "The Meantime",
+          "alternateName": "The Meantime: A Non-Technical Compass for Working with the AI We Actually Have",
+          "url": "https://martawasko.com/book",
+          "image": "https://martawasko.com/images/the-meantime-cover.jpg",
+          "description": "A non-technical compass for working with the AI we actually have. The Meantime is about the space between panic and fantasy — what AI is, what it is not, and how knowledge workers can build better relationships with imperfect tools.",
+          "author": {
+            "@id": "https://martawasko.com/#person"
+          },
+          "inLanguage": "en",
+          "bookFormat": "https://schema.org/Paperback"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://martawasko.com/book#webpage",
+          "url": "https://martawasko.com/book",
+          "name": "The Meantime — martawasko.com",
+          "description": "A non-technical compass for working with the AI we actually have. Out now on Amazon.",
+          "isPartOf": {
+            "@id": "https://martawasko.com/#website"
+          },
+          "about": {
+            "@id": "https://martawasko.com/book#book"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://martawasko.com/book#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://martawasko.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "The Meantime",
+              "item": "https://martawasko.com/book"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5DH4CXLCM7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5DH4CXLCM7');
+    </script>
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Page-specific styles (built on the shared design tokens) -->
+    <style>
+        .card--book {
+            max-width: 720px;
+        }
+
+        .book-hero {
+            display: grid;
+            grid-template-columns: 210px 1fr;
+            gap: 2.5rem;
+            align-items: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .book-cover {
+            display: block;
+            width: 100%;
+            height: auto;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+        }
+
+        .book-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            color: var(--color-teal);
+            margin-bottom: 0.75rem;
+        }
+
+        .book-subtitle {
+            font-size: 1.0625rem;
+            font-style: italic;
+            color: var(--color-text-muted);
+            line-height: 1.55;
+            margin-bottom: 1.5rem;
+        }
+
+        .book-prose p {
+            font-size: 0.9375rem;
+            color: var(--color-text-muted);
+            line-height: 1.75;
+            margin-bottom: 1.25rem;
+        }
+
+        .book-prose p:last-child {
+            margin-bottom: 0;
+        }
+
+        .book-prose strong {
+            color: var(--color-text);
+            font-weight: 600;
+        }
+
+        .book-block {
+            margin-bottom: 2rem;
+        }
+
+        .book-label {
+            font-size: 0.6875rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-navy);
+            margin-bottom: 0.875rem;
+        }
+
+        .book-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .book-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 0.9375rem;
+            color: var(--color-text-muted);
+            line-height: 1.6;
+        }
+
+        .book-list .list-icon {
+            width: 16px;
+            height: 16px;
+            stroke-width: 2.5;
+            color: var(--color-teal);
+            flex-shrink: 0;
+            margin-top: 0.25rem;
+        }
+
+        .btn--book {
+            font-size: 0.8125rem;
+            padding: 1rem 1.5rem;
+        }
+
+        .book-note {
+            font-size: 0.8125rem;
+            color: var(--color-text-light);
+            margin-top: 0.875rem;
+        }
+
+        .book-cta {
+            margin: 2.5rem 0 1.25rem;
+        }
+
+        .book-secondary {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            text-align: center;
+        }
+
+        .book-secondary a {
+            font-size: 0.8125rem;
+            color: var(--color-text-muted);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+
+        .book-secondary a:hover {
+            color: var(--color-teal);
+        }
+
+        .book-closing {
+            font-size: 0.875rem;
+            font-style: italic;
+            color: var(--color-text-light);
+            line-height: 1.7;
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+
+        @media (max-width: 700px) {
+            .book-hero {
+                grid-template-columns: 1fr;
+                gap: 1.75rem;
+                text-align: center;
+            }
+
+            .book-cover {
+                max-width: 210px;
+                margin: 0 auto;
+            }
+
+            .book-title {
+                font-size: 1.875rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card card--book">
+        <a href="../index.html" class="back-link">
+            <i data-lucide="arrow-left" class="btn-icon"></i>
+            Back to home
+        </a>
+
+        <!-- Hero -->
+        <header class="book-hero">
+            <img
+                src="../images/the-meantime-cover.jpg"
+                alt="The Meantime by Marta Waśko — A Non-Technical Compass for Working with the AI We Actually Have"
+                class="book-cover"
+                width="700"
+                height="1119"
+            >
+            <div>
+                <span class="badge">The book · out now</span>
+                <h1 class="book-title">The Meantime</h1>
+                <p class="book-subtitle">
+                    A Non-Technical Compass for Working with the AI We Actually Have
+                </p>
+                <div class="book-prose">
+                    <p>
+                        Most of us are not working in the polished future promised by AI marketing. We are working in the meantime: with tools that are powerful, uneven, surprising, limited, useful, and often misunderstood.
+                    </p>
+                    <p>
+                        <strong>The Meantime is a book for people trying to think clearly about that reality.</strong>
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <div class="divider"></div>
+
+        <!-- What it's about -->
+        <div class="book-block">
+            <p class="book-label">What it's about</p>
+            <div class="book-prose">
+                <p>
+                    The Meantime is about the space between panic and fantasy. It explores what AI is, what it is not, and how knowledge workers can begin building better relationships with tools that speak, assist, summarize, generate, and sometimes fail in very convincing ways.
+                </p>
+                <p>
+                    This is not a book about replacing humans with machines. It is a book about learning how to remain thoughtful, capable, and responsible while the tools around us change.
+                </p>
+            </div>
+        </div>
+
+        <!-- Who it's for -->
+        <div class="book-block">
+            <p class="book-label">Who it's for</p>
+            <ul class="book-list">
+                <li>
+                    <i data-lucide="check" class="list-icon"></i>
+                    <span>Knowledge workers trying to understand AI without becoming technical experts.</span>
+                </li>
+                <li>
+                    <i data-lucide="check" class="list-icon"></i>
+                    <span>Professionals tired of hype, fear, and shallow productivity advice.</span>
+                </li>
+                <li>
+                    <i data-lucide="check" class="list-icon"></i>
+                    <span>Builders, educators, managers, and operators working with imperfect tools.</span>
+                </li>
+                <li>
+                    <i data-lucide="check" class="list-icon"></i>
+                    <span>People who want language for what they are already experiencing at work.</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Where it goes next -->
+        <div class="book-block">
+            <p class="book-label">Where it goes next</p>
+            <div class="book-prose">
+                <p>
+                    The book is the compass. These are the two places the thinking becomes practical — one private, one shared.
+                </p>
+            </div>
+            <div class="products-grid" style="margin-top: 1.25rem;">
+                <a href="https://operator.martawasko.com/?utm_source=bookpage&amp;utm_medium=site&amp;utm_campaign=site" class="product-link" target="_blank" rel="noopener" onclick="gtag('event', 'operator_map_click', { 'link_location': 'book_page' });">
+                    <i data-lucide="map" class="product-icon"></i>
+                    <div class="product-info">
+                        <span class="product-name">The Operator Map</span>
+                        <span class="product-desc">One recipe for the piece of your work worth automating first</span>
+                    </div>
+                </a>
+                <a href="../village/index.html" class="product-link">
+                    <i data-lucide="users" class="product-icon"></i>
+                    <div class="product-info">
+                        <span class="product-name">The Village</span>
+                        <span class="product-desc">A room for people doing this work, so you are less alone in it</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Primary CTA -->
+        <div class="book-cta">
+            <a href="https://www.amazon.com/dp/B0HBG59W16" class="btn btn--full btn--book" target="_blank" rel="noopener" onclick="gtag('event', 'book_buy_click', { 'link_location': 'book_page' });">
+                <i data-lucide="book-open" class="btn-icon"></i>
+                Get it on Amazon
+                <i data-lucide="arrow-right" class="btn-icon"></i>
+            </a>
+            <p class="book-note" style="text-align: center;">Out now on Amazon in paperback and Kindle.</p>
+        </div>
+
+        <!-- Secondary links -->
+        <div class="book-secondary">
+            <a href="https://hititaimarta.substack.com" target="_blank" rel="noopener">Read the newsletter, The Upgrade</a>
+        </div>
+
+        <!-- Closing -->
+        <p class="book-closing">
+            The book, the tools, and the room are one connected body of work. The book hands you the compass. The rest is the walking. — M.
+        </p>
+
+        <div class="divider" style="margin-top: 2.5rem;"></div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p class="social-title">Follow</p>
+            <div class="social-links">
+                <a href="https://x.com/martawasko" class="social-link" aria-label="X (Twitter)" target="_blank" rel="noopener">
+                    <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@Marta_Wasko" class="social-link" aria-label="YouTube" target="_blank" rel="noopener">
+                    <i data-lucide="youtube" class="social-icon"></i>
+                </a>
+                <a href="https://www.instagram.com/sferaa_courses/" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                    <i data-lucide="instagram" class="social-icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/marta-wasko-1424ab126/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                    <i data-lucide="linkedin" class="social-icon"></i>
+                </a>
+            </div>
+            <p class="copyright">© 2025 Marta Wasko. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
