@@ -515,6 +515,17 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Mid-page CTA: the offer sits at ~76% scroll depth, so people who are
+                 convinced by the curriculum alone had nowhere to act until the very end. -->
+            <div class="max-w-3xl mx-auto mt-14 text-center">
+                <p class="text-lg text-slate-300 mb-5">Sound like the work you actually do?</p>
+                <a href="#offer"
+                   class="inline-block bg-accent-500 hover:bg-accent-400 text-slate-950 font-semibold rounded-xl px-8 py-4 transition">
+                    Join the Waitlist &mdash; Lock in $247
+                </a>
+                <p class="text-slate-500 text-sm mt-3">Only 30 founding member spots. Module 1 releases free.</p>
+            </div>
         </div>
     </section>
 
@@ -683,11 +694,11 @@
     </section>
 
     <!-- Offer Section -->
-    <section id="offer" data-track-view="offer" class="py-20 md:py-32 bg-slate-950">
+    <section id="offer" data-track-view="offer" class="py-12 md:py-32 bg-slate-950">
         <div class="max-w-6xl mx-auto px-4 sm:px-6">
             <div class="max-w-3xl mx-auto">
-                <div class="text-center mb-12">
-                    <div class="inline-flex items-center gap-2 bg-accent-500/20 border border-accent-500/30 rounded-full px-4 py-1.5 text-sm text-accent-300 mb-6">
+                <div class="text-center mb-8 md:mb-12">
+                    <div class="inline-flex items-center gap-2 bg-accent-500/20 border border-accent-500/30 rounded-full px-4 py-1.5 text-sm text-accent-300 mb-4 md:mb-6">
                         <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
                         </svg>
@@ -715,6 +726,25 @@
                             <p class="text-slate-400 text-sm">One-time payment</p>
                             <p class="text-slate-400 text-sm">Lifetime access included</p>
                         </div>
+                    </div>
+
+                    <!-- Kit.com Email Capture Form.
+                         Sits directly under the price on purpose: every "Join Waitlist" CTA
+                         jumps to #offer, and this form used to be 1,038px below that anchor -
+                         so clicking the primary CTA did not reveal the email field. -->
+                    <div class="space-y-4 mb-8 pb-8 border-b border-slate-700/50">
+                        <div class="kit-form-slot">
+                            <script async data-uid="93b5a594e0" src="https://hitit-ai.kit.com/93b5a594e0/index.js"></script>
+                            <noscript>
+                                <a href="https://hitit-ai.kit.com/93b5a594e0"
+                                   class="block w-full text-center bg-accent-500 hover:bg-accent-400 text-slate-950 font-semibold rounded-xl px-6 py-4 transition"
+                                   rel="noopener">Join the waitlist &rarr;</a>
+                                <p class="text-center text-slate-500 text-sm mt-3">Opens the signup form.</p>
+                            </noscript>
+                        </div>
+                        <p class="text-center text-slate-500 text-sm">
+                            Join the waitlist to lock in founding member pricing when we launch.
+                        </p>
                     </div>
 
                     <div class="space-y-4 mb-8">
@@ -747,15 +777,6 @@
                         </div>
                     </div>
 
-                    <!-- Kit.com Email Capture Form -->
-                    <div class="space-y-4">
-                        <div class="kit-form-slot">
-                            <script async data-uid="93b5a594e0" src="https://hitit-ai.kit.com/93b5a594e0/index.js"></script>
-                        </div>
-                        <p class="text-center text-slate-500 text-sm">
-                            Join the waitlist to lock in founding member pricing when we launch.
-                        </p>
-                    </div>
                 </div>
 
                 <div class="mt-8 text-center">
