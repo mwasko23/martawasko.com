@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Marta Waśko</title>
+    <meta name="description" content="That page has moved or no longer exists. Find the book, the course, and the free starter kit here.">
+    <meta name="robots" content="noindex">
+
+    <!-- Root-absolute paths: this page is served for ANY missing URL depth -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5DH4CXLCM7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5DH4CXLCM7');
+      // Record which dead URL was requested, so broken links are visible in GA4.
+      gtag('event', 'page_not_found', {
+        'requested_path': window.location.pathname,
+        'referrer': document.referrer || '(none)'
+      });
+    </script>
+</head>
+<body>
+    <div class="card card--narrow">
+        <div class="icon">🧭</div>
+        <h1 class="page-title">That page isn't here</h1>
+        <p class="page-description">
+            The link you followed is out of date — this site was rebuilt and some older pages went away. Here's where things live now.
+        </p>
+
+        <div class="buttons">
+            <a href="/" class="btn">Home</a>
+            <a href="/book/" class="btn btn--outline">My Book: The Meantime</a>
+            <a href="/courses.html" class="btn btn--outline">AI Operator Course</a>
+            <a href="/starter-kit.html" class="btn btn--outline">Free Starter Kit</a>
+            <a href="/village/" class="btn btn--outline">The Village</a>
+            <a href="https://hitit.ai/blog" class="btn btn--outline" target="_blank" rel="noopener">Blog &amp; Essays</a>
+        </div>
+
+        <p class="privacy-note">Looking for an older blog post? Most of that writing now lives at <a href="https://hitit.ai/blog" target="_blank" rel="noopener">hitit.ai/blog</a>.</p>
+    </div>
+</body>
+</html>
