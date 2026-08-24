@@ -3,8 +3,14 @@ Allow: /
 Disallow: /starter-kit-access.html
 Disallow: /thank-you.html
 Disallow: /premium_package/*.pdf
+Disallow: /premium_package/presentation/SLIDE_TEMPLATES.html
 Disallow: /AI_Starter_Kit*.pdf
 Disallow: /AI_Starter_Kit_Final.pdf
 Disallow: /Episode*
+
+# AI crawlers (GPTBot, ClaudeBot, PerplexityBot, Google-Extended, etc.) are
+# intentionally permitted via the User-agent: * group above. They are NOT given
+# their own groups on purpose: a named group overrides "*" entirely, which would
+# silently expose the gated PDFs and thank-you pages listed above.
 
 Sitemap: https://martawasko.com/sitemap.xml
