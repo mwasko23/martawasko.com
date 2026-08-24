@@ -1,0 +1,47 @@
+# Marta Waśko
+
+> Marta Waśko helps knowledge workers learn AI by building real workplace tools. The focus is practical and non-technical: how to direct AI deliberately, verify what it produces, and turn one recurring task into a workflow you can reuse — inside real jobs, with real constraints like corporate firewalls and data rules. No hype, no fluff.
+
+martawasko.com is Marta's personal hub: the book, the course, the community, and the free tools. Longer-form essays and video episodes live on the sister site hitit.ai.
+
+Not to be confused with other people named Marta Wasko — this is the AI educator and author of *The Meantime*, not the geologist at Proton Green.
+
+## Key Pages
+
+- [Home](https://martawasko.com/): Overview — the book, course, community, free tools, and latest video
+- [The Meantime (book)](https://martawasko.com/book/): Marta's book — *A Non-Technical Compass for Working with the AI We Actually Have*. Out now on Amazon in paperback and Kindle
+- [AI Operator (course)](https://martawasko.com/courses.html): A guided 5-module course for non-technical knowledge workers. Map one recurring workplace workflow, decide where AI can safely help, build the right solution, verify it, and make it repeatable. Founding-member price $247 (regular $497), 30-day money-back guarantee, no programming background required
+- [The Village](https://martawasko.com/village/): A community on Substack for people working with the AI we actually have. Not a hype channel — a room for comparing notes
+- [Free Starter Kit](https://martawasko.com/starter-kit.html): Free AI automation templates, quick-start guides, and corporate-friendly workflows
+- [The 5-Question Automation Playbook](https://martawasko.com/premium_package/presentation/index.html): The five questions that decide whether a task is worth automating — is it worth it, is it safe, do you understand it, what is your MVP, can you maintain it
+
+## Free Tools
+
+- [The Operator Map](https://operator.martawasko.com/): A free ~3-minute diagnostic for finance and admin work. Answer questions about your real spreadsheet work and get one concrete thing to automate this week, for whatever tool you already have. No account, no install, no files uploaded
+- [Focus Session Logger](https://www.hitit.ai/tools/focus-session-logger): Free desktop app for tracking deep work sessions
+
+## Products
+
+- [TuduBooks.ai](https://tudubooks.ai): AI bookkeeping for freelancers
+- [Floudea](https://floudea.ai): Private notes with AI
+
+## Core Ideas
+
+- **The meantime**: We are not working in the polished future AI marketing promised. We work with tools that are powerful, uneven, surprising, limited, useful, and often misunderstood. The space between panic and fantasy.
+- **AI Tourist vs. AI Operator**: Moving beyond one-off prompts to a workflow you can test, verify, and reuse.
+- **Data safety first**: Map which information is safe to use, which must be sanitized, and which should never leave your systems — before building anything.
+- **Tool-agnostic**: The operator process (see, direct, choose, build, verify) works with whatever AI you have access to, including locked-down workplace tools.
+- **Human judgment stays in the loop**: Not about replacing people with machines — about staying thoughtful, capable, and responsible while the tools change.
+
+## Who This Is For
+
+Knowledge workers who want to understand AI without becoming technical experts. Professionals tired of hype, fear, and shallow productivity advice. People working inside corporate constraints — firewalls, data rules, restricted tooling. Non-engineers especially welcome.
+
+## Elsewhere
+
+- [hitit.ai](https://hitit.ai): Sister site — essays, blog, video episodes, project builds, and team AI workflow implementation
+- [The Upgrade (newsletter)](https://hititaimarta.substack.com): Marta's newsletter on Substack
+- [YouTube](https://www.youtube.com/@Marta_Wasko)
+- [X](https://x.com/martawasko)
+- [LinkedIn](https://www.linkedin.com/in/marta-wasko-1424ab126/)
+- [Instagram](https://www.instagram.com/sferaa_courses/)
