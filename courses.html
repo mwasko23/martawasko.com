@@ -16,7 +16,7 @@
     <meta property="og:url" content="https://martawasko.com/courses.html">
     <meta property="og:title" content="AI Operator — Turn One Recurring Task into a Repeatable AI Workflow">
     <meta property="og:description" content="A guided course for non-technical knowledge workers. Map real work, decide where AI can safely help, and build a workflow you can test, verify, and reuse.">
-    <meta property="og:image" content="https://martawasko.com/images/IMG_2S.jpg">
+    <meta property="og:image" content="https://martawasko.com/images/og-card.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
@@ -173,9 +173,18 @@
             }
         }
     </script>
+    <link rel="preconnect" href="https://hitit-ai.kit.com" crossorigin>
+    <link rel="preconnect" href="https://f.convertkit.com" crossorigin>
+    <link rel="dns-prefetch" href="https://app.kit.com">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
         body { font-family: 'Inter', sans-serif; }
+        /* Reserve the height Kit's form occupies before its script injects it.
+           Measured live at 222px (identical at 390px and 686px wide). Plain CSS,
+           not a Tailwind class, because the CDN build applies classes only after
+           JS runs - which is the exact window the layout shift happens in. */
+        .kit-form-slot { min-height: 222px; }
         .gradient-text {
             background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
             -webkit-background-clip: text;
@@ -739,7 +748,9 @@
 
                     <!-- Kit.com Email Capture Form -->
                     <div class="space-y-4">
-                        <script async data-uid="93b5a594e0" src="https://hitit-ai.kit.com/93b5a594e0/index.js"></script>
+                        <div class="kit-form-slot">
+                            <script async data-uid="93b5a594e0" src="https://hitit-ai.kit.com/93b5a594e0/index.js"></script>
+                        </div>
                         <p class="text-center text-slate-500 text-sm">
                             Join the waitlist to lock in founding member pricing when we launch.
                         </p>
